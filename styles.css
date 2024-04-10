@@ -1,0 +1,159 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+header {
+    padding: 2rem;
+
+}
+header, footer {
+    background-color: rgb(53, 71, 152);
+    color: #fff;
+    text-align: center;
+}
+
+footer {
+    padding: 1rem;
+    position: fixed; /* or absolute */
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(53, 71, 152);
+    color: white;
+    text-align: center;
+}
+
+
+main {
+    margin: 2rem auto;
+    max-width: 800px;
+    padding: 0 1rem;
+    padding-bottom: 7rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+/* Styles for Search Section */
+#search {
+    text-align: center;
+    position: relative; /* Added */
+}
+
+#search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#location-input {
+    width: 60%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 1rem;
+}
+
+button[type="submit"] {
+    padding: 0.5rem 1rem;
+    background-color: rgb(53, 71, 152);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Styles for dropdown menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding-right: 11%;
+    width: 72%;
+}
+
+.dropdown-content {
+    display: none;
+    background-color: #fff; /* Change background color */
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    width: calc(100% - 1px); /* Adjust width to match input field */
+    top: calc(100% + 5px); /* Position below input field */
+    left: 0;
+    margin-top: 5px;
+    max-height: 150px; /* Adjusted */
+    overflow-y: auto; /* Added */
+}
+
+.dropdown-item {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dropdown-item:hover {
+    background-color: #f2f2f2; /* Change hover background color */
+}
+
+/* Styles for Weather Info Section */
+#weather-location {
+    background-color: #fff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+#weather-location h2 {
+    margin-bottom: 0.5rem;
+}
+
+#weather-description {
+    font-style: italic;
+}
+
+#weather-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+#weather-details div {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+#weather-details h3 {
+    margin-bottom: 0.5rem;
+}
+
+#wind-icon{
+    max-height: 45px;
+    width: auto;
+}
+
+@keyframes moveWindIcon {
+    0% {
+        padding-left:0%;
+    }
+    
+    100% {
+        padding-left: 80%;
+    } 
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <!-- Header content (e.g., logo, title) -->
+       <h1>Weather Dashboard</h1> 
+    </header>
+    <main>
+        <section id="search">
+            <form id="search-form">
+                <input type="text" id="location-input" placeholder="Enter city, ZIP code, or coordinates">
+                <button type="submit">Search</button>
+            </form>
+            <div class="dropdown">
+                <div class="dropdown-content" id="previous-searches"></div>
+            </div>
+        </section>
+        
+        <section id="weather-info">
+            <div id="weather-location">
+                <h2>Weather for <span id="location-name"></span></h2>
+            </div>
+            <div id="weather-details">
+                <div>
+                    <h3>Temperature</h3>
+                    <p id="temperature"></p>
+                </div>
+                <div>
+                    <h3>Today's High</h3>
+                    <p id="highTemp"></p>
+                    <h3>Today's Low</h3>
+                    <p id="lowTemp"></p>
+                </div>
+                <div id="forecast">
+                    <!-- Forecast data will be added here -->
+                </div>
+                <!-- Add more weather details as needed -->
+                <div>
+                    <h3>Current Weather</h3>
+                    <p id="weather-description"></p>
+                    <p id="currentWeather"></p>
+                    <img id="weather-icon" src="" alt="">
+                </div>
+                <div>
+                    <h3>Humidity</h3>
+                    <p id="humidity"></p>
+                </div>
+                <div>
+                    <h3>Wind Speed</h3>
+                    <p id="wind-speed"></p>
+                    <img id="wind-icon" src="wind-icon.webp" alt="wind icon">
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span><br>
+            Spencer Lamoreaux <br>
+            (208) 521-3988 <br>
+            United States of America
+          </p>
+          <p>
+            This webpage is a project for Brigham Young University-Idaho course WDD
+            330
+          </p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="weather.js"></script>
+</body>
+</html>
